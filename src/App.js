@@ -20,13 +20,13 @@ import Productdash from "./modules/Admin/Products"
 const App = () => {
   return (
     <>
-    <Dashboard/>  
+  
  
-      {/* <Header /> */}
+      <Header />
       <Routes>
       <Route path="usersdash" element={<Usersdash/>} />
       <Route path="productsdash" element={<Productdash/>} />
-        {/* <Route path="contact" element={<Contact />} />
+        <Route path="contact" element={<Contact />} />
         <Route path="cart" element={<Cart />} />
         <Route path="order" element={<Orders />} />
         <Route path="homedetail/:id" element={<HomeDetail />} />
@@ -38,7 +38,7 @@ const App = () => {
         <Route path="blog" element={<Blog />} />
         <Route path="/" element={<Home />} />
         <Route path="car" element={<Cars />} />
-        <Route path="login" element={<Login />} /> */}
+        <Route path="login" element={<Login />} />
       </Routes>
     </>
   );
