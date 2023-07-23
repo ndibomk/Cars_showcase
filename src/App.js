@@ -13,14 +13,20 @@ import Trade from "./modules/Trade/Trade";
 import Cart from './modules/Cart';
 import HomeDetail from './modules/HomeDetail';
 import Orders from "./modules/Orders";
+import Dashboard from "./modules/Admin/Dahboard";
+import Usersdash from "./modules/Admin/Users";
+import Productdash from "./modules/Admin/Products"
 
 const App = () => {
   return (
     <>
-      
-      <Header />
+    <Dashboard/>  
+ 
+      {/* <Header /> */}
       <Routes>
-        <Route path="contact" element={<Contact />} />
+      <Route path="usersdash" element={<Usersdash/>} />
+      <Route path="productsdash" element={<Productdash/>} />
+        {/* <Route path="contact" element={<Contact />} />
         <Route path="cart" element={<Cart />} />
         <Route path="order" element={<Orders />} />
         <Route path="homedetail/:id" element={<HomeDetail />} />
@@ -32,7 +38,7 @@ const App = () => {
         <Route path="blog" element={<Blog />} />
         <Route path="/" element={<Home />} />
         <Route path="car" element={<Cars />} />
-        <Route path="login" element={<Login />} />
+        <Route path="login" element={<Login />} /> */}
       </Routes>
     </>
   );
